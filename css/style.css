@@ -1,0 +1,208 @@
+html { 
+    box-sizing: border-box; 
+}
+*, 
+::before, 
+::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --black: #111111;
+    --grey: #808080;
+    --white: #E3E3E3;
+
+    --font-default: 'Quattrocento', serif;
+    --font-special: 'Dancing Script';
+}
+
+body {
+    font-family: var(--font-default); 
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: var(--white);
+    background-color: var(--grey);
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ **************************************
+	HEADER
+ **************************************
+*/
+
+.website__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 90px;
+    background-color: var(--black);
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu__item {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 30px; 
+}
+
+.menu__item a {
+    color: var(--white);
+    text-decoration: none;
+    transition: background-color 0.3s, transform 1s; 
+}
+
+.menu__item a:hover {
+    color: var(--grey); 
+    font-weight: bold;
+}
+
+.burger__menu div {
+   width:25px;
+   height: 3px;
+   background-color: var(--white);
+   margin: 5px;
+}
+.burger__menu {
+    display: none;
+}
+    /* .menu__item display: flex; space around; width: 35%, responsivní nav  ,nejde scale--*/
+
+/*
+ **************************************
+	FOOTER
+ **************************************
+*/
+.footer__main {
+    width: 100%;
+    min-height: 40px;
+    background-color: var(--grey);      
+}
+
+.footer__info {
+    display: flex;
+    color: var(--black);
+    justify-content: center;
+    font-size: 12px;
+}
+.footer__menu-icons {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+}
+.icon {
+    background-color: var(--grey); 
+}
+
+/*
+ **************************************
+	ÚVOD bckg image?změnit Smooch, mobil img display: none
+ **************************************
+*/
+
+.services__motto > blockquote {
+    font-family: var(--font-special);
+    font-size: 28px;
+}
+.intro__img {
+    width: 100%;
+}
+/*
+ **************************************
+	SLUŽBY
+ **************************************
+*/
+.services__blockquote {
+    font-family: var(--font-special);
+    font-size: 32px;
+}
+.services__img {
+    width: 100%;
+}
+/*
+ **************************************
+	CENÍK
+ **************************************
+*/
+/*
+ **************************************
+	GALERIE    carousel?předělat grid, asi na půlku
+ **************************************
+*/
+
+.gallery > h2 {
+    display: flex;
+    justify-content: center;
+}
+.gallery__grid {
+	display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    grid-auto-flow: dense;
+    justify-content: center;
+}
+.gallery__item {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*
+ **************************************
+	KONTAKT ikonky grid, na půlku?, nebo 1 fr, zvětšit mapu, upr. filtr
+ **************************************
+*/
+.form__field {
+	margin-bottom: 1rem;
+    display: flex;
+}
+
+.form__field label {
+	display: flex;
+    flex: 0 0 100px;
+	font-size: 15px;
+}
+
+.form__field input,
+.form__field textarea {
+	flex: 0 0 40%;
+	padding: 5px;
+	border: 2px solid #616060;
+}
+.form__checkbox input {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+.form__button :hover {
+    background-color: #616060;
+}
+.contact__map {
+    background-color: var(--black);
+    opacity: .6;
+}
+
+/*MEDIA SCREEN
+@media screen and (max-width:1024px){
+
+}
+@media screen and (max-width:768px){
+    .burger__menu {
+        display:block
+    }
+}
+*/

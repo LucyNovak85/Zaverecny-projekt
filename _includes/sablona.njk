@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Stáj Lindenhof</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+    
+        <header class="website__header">
+            
+            <div class="logo">
+                <img src="/images/logo-crop2.jfif">
+            </div>
+
+            <div class="nav__menu">
+                <ul class="menu__list">
+
+                    <li class="menu__item">
+                        <a href="/" class="menu__link">Úvod</a>
+                    </li>
+                        
+                    <li class="menu__item">
+                        <a href="/sluzby/" class="menu__link">Služby</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="/cenik/" class="menu__link">Ceník</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="/galerie/" class="menu__link">Galerie</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="/kontakt/" class="menu__link">Kontakt</a>
+                    </li>	
+                </ul>
+            </div>
+
+            <div class="burger__menu">
+                <div class="burger__item"></div>
+                <div class="burger__item"></div>
+                <div class="burger__item"></div>
+            </div>
+        </header>
+        
+        <main class="main">
+           {{ content | safe }}
+        </main>
+
+        <footer>
+            <div class="footer__main">
+                <ul class="footer__menu-icons">
+                    <a href="https://www.instagram.com/staj_lindenhof/" class="icon"><img src="/images/insta-icon.png" class="icon"></a>
+                    <a href="https://www.facebook.com/Stáj-Lindenhof-104194902113084/"><img src="/images/fcb-icon.png" class="icon"></a>
+                </ul>  
+
+                <div class="footer__info">
+                    <span>© 2021, Lucy Novak.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>	
+</html>

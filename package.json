@@ -1,0 +1,16 @@
+{
+  "name": "projekt-staj",
+  "version": "1.0.0",
+  "description": "Staj Lindenhof",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Lucy Novak",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}

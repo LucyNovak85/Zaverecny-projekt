@@ -142,11 +142,11 @@ body {
 */
 /*
  **************************************
-	GALERIE    carousel?předělat grid, asi na půlku
+	GALERIE   
  **************************************
 */
 
-.gallery > h2 {
+.gallery__container > h2 {
     display: flex;
     justify-content: center;
 }

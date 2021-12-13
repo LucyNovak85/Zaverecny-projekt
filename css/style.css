@@ -140,7 +140,7 @@ iframe {
 
 /*
  **************************************
-	ÚVOD bckg image?změnit Smooch, mobil img display: none
+	INDEX
  **************************************
 */
 
@@ -285,6 +285,8 @@ iframe {
 	CENÍK
  **************************************
 */
+
+
 /*
  **************************************
 	GALERIE   
@@ -434,13 +436,12 @@ iframe {
 	MEDIA Q
  **************************************
 */
+
 @media (max-width: 950px) {
     .services__blocks {
        grid-template-columns: repeat(2, 1fr);   
     }
 }
-
-
 
 @media (max-width: 750px) {
     h1,

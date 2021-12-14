@@ -148,7 +148,6 @@ iframe {
     max-width: 1250px;
     margin: auto;
     padding: 100px 20px;
-
 }
 
 .intro__general > *:not(:last-child) {
@@ -285,7 +284,11 @@ iframe {
 	CENÍK
  **************************************
 */
-
+.pricing__container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 100px 20px;
+}
 
 /*
  **************************************
@@ -293,23 +296,25 @@ iframe {
  **************************************
 */
 
-.gallery__container > h2 {
-    display: flex;
-    justify-content: center;
+.gallery__container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 100px 20px;
 }
+
+.gallery__container h1 {
+    margin-bottom: 0;
+}
+
 .gallery__grid {
 	display: grid;
-    grid-auto-rows: minmax(50px, auto);
-    grid-auto-flow: dense;
-    justify-content: center;
-}
-.gallery__item {
-    max-width: 100%;
-    max-height: 100%;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
 }
 
 .gallery__grid img {
-    max-width: 100px;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 /*
@@ -433,13 +438,17 @@ iframe {
 
 /*
  **************************************
-	MEDIA Q
+	MEDIA Q ještě jeden přechod pro galerii?
  **************************************
 */
 
 @media (max-width: 950px) {
     .services__blocks {
        grid-template-columns: repeat(2, 1fr);   
+    }
+
+    .gallery__grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -464,6 +473,10 @@ iframe {
 
     .services__blocks {
         grid-template-columns: 1fr;   
+    }
+
+    .gallery__grid {
+        grid-template-columns: 1fr;
     }
 
     .contact__container-inner {
